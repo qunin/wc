@@ -13,7 +13,7 @@ void Charcount(FILE *fp)//字符计数
 	{
 		sum++;
 	}
-	cout<<"字符数目为：" <<sum<<endl;
+	cout<<"the num of char is：" <<sum<<endl;
 	fclose(fp);
 } 
 void  Wordcount(FILE *fp)//单词计数
@@ -30,7 +30,7 @@ void  Wordcount(FILE *fp)//单词计数
 			   sum++;
 		}
 	}
-	cout<<"单词数目为："<<sum<<endl;
+	cout<<"the num of word is："<<sum<<endl;
 	fclose(fp);
 }
 void Linecount(FILE *fp)//行计数 
@@ -42,7 +42,7 @@ void Linecount(FILE *fp)//行计数
 		if(str=='\n')
 		   sum++;
 	}
-	cout<<"行数为："<<sum<<endl;
+	cout<<"the num of line is："<<sum<<endl;
 	fclose(fp);
 }
 int main(int argc, char *argv[])
