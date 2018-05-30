@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h> 
 using namespace std;
-void Charcount(FILE *fp)//×Ö·û¼ÆÊý
+void Charcount(FILE *fp)//å­—ç¬¦è®¡æ•°
 {
 	int sum=0;
 	char str;
@@ -13,10 +13,10 @@ void Charcount(FILE *fp)//×Ö·û¼ÆÊý
 	{
 		sum++;
 	}
-	cout<<"×Ö·ûÊýÄ¿Îª£º" <<sum<<endl;
+	cout<<"å­—ç¬¦æ•°ç›®ä¸ºï¼š" <<sum<<endl;
 	fclose(fp);
 } 
-void  Wordcount(FILE *fp)//µ¥´Ê¼ÆÊý
+void  Wordcount(FILE *fp)//å•è¯è®¡æ•°
 {
 	int sum=0;
 	char str;
@@ -30,10 +30,10 @@ void  Wordcount(FILE *fp)//µ¥´Ê¼ÆÊý
 			   sum++;
 		}
 	}
-	cout<<"µ¥´ÊÊýÄ¿Îª£º"<<sum<<endl;
+	cout<<"å•è¯æ•°ç›®ä¸ºï¼š"<<sum<<endl;
 	fclose(fp);
 }
-void Linecount(FILE *fp)//ÐÐ¼ÆÊý 
+void Linecount(FILE *fp)//è¡Œè®¡æ•° 
 {
 	int sum=0;
 	char str;
@@ -42,28 +42,8 @@ void Linecount(FILE *fp)//ÐÐ¼ÆÊý
 		if(str=='\n')
 		   sum++;
 	}
-	cout<<"ÐÐÊýÎª£º"<<sum<<endl;
+	cout<<"è¡Œæ•°ä¸ºï¼š"<<sum<<endl;
 	fclose(fp);
-} 
-void Count(FILE *fp)//¿ÕÐÐÊý¡¢´úÂëÐÐÊý¡¢×¢ÊÍÐÐÊýµÄÍ³¼Æ
-{
-	char str;
-	int esum=0,csum=0,nsum=0;
-	while(fscanf(fp,"%c",&str)!=EOF)
-	{
-		if(str=='{'||str=='}')
-		   esum++;
-		else if(str=='\n')
-		{
-			fscanf(fp,"%c",&str);
-			while(str=='\n')
-			{
-				esum++;
-	            fsacnf=(fp,"%c",&str);
-			}
-		}
-		else if(ch=='/')
-	}
 }
 int main(int argc, char *argv[])
 {
