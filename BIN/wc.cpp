@@ -63,9 +63,4 @@ int main(int argc, char *argv[])
 		fp=fopen(argv[2],"r");
 		Linecount(fp);
 	}
-	else if(strcmp("-a",argv[1])==0)
-	{
-		fp=fopen(argv[2],"r");
-		Count(fp);
-	}
 }
